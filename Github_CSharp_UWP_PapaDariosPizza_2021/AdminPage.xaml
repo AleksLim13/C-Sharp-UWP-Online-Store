@@ -1,0 +1,126 @@
+<Page
+    x:Class="PapaDariosPizza.AdminPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PapaDariosPizza"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible">
+
+            <StackPanel  Background="Beige" Name="Container">
+                <StackPanel Width="300" Name="Main">
+                    <StackPanel Orientation="Horizontal">
+
+                        <TextBlock FontWeight="Bold" FontSize="25">
+                    Papa Darios Pizza
+                        </TextBlock>
+                        <Button Click="HomeBtn_Click" Margin="10, 0, 0, 0">
+                            Home
+                        </Button>
+
+                    </StackPanel>
+
+                    <TextBlock>
+                    Admin
+                    </TextBlock>
+                    <TextBlock Margin="0, 25, 0, 0">
+                        Read Single Order By Id:
+                    </TextBlock>
+
+                    <TextBox Name="OrderId">
+
+                    </TextBox>
+
+                    <Button Click="ReadOrderByIdBtn_Click" Margin="0, 10, 0, 0" Width="300">
+                        Read Order
+                    </Button>
+
+                    <TextBlock Margin="0, 25, 0, 0">
+                            Orders Based on Month
+                    </TextBlock>
+
+                    <ComboBox Name="OrdersMonthBox" Width="300">
+                        <ComboBoxItem>January</ComboBoxItem>
+                        <ComboBoxItem>February</ComboBoxItem>
+                        <ComboBoxItem>March</ComboBoxItem>
+                        <ComboBoxItem>April</ComboBoxItem>
+                        <ComboBoxItem>May</ComboBoxItem>
+                        <ComboBoxItem>June</ComboBoxItem>
+                        <ComboBoxItem>July</ComboBoxItem>
+                        <ComboBoxItem>August</ComboBoxItem>
+                        <ComboBoxItem>September</ComboBoxItem>
+                        <ComboBoxItem>October</ComboBoxItem>
+                        <ComboBoxItem>November</ComboBoxItem>
+                        <ComboBoxItem>December</ComboBoxItem>
+                    </ComboBox>
+                    
+                    <Button Click="ReadOrderMonthBtn_Click" Margin="0, 10, 0, 0" Width="300">
+                        Read Orders
+                    </Button>
+
+                    <TextBlock Margin="0, 25, 0, 0">
+                            Orders Based on Year
+                    </TextBlock>
+
+                    <ComboBox Name="OrdersYearBox" Width="300">
+                        <ComboBoxItem>Small</ComboBoxItem>
+                        <ComboBoxItem>Medium</ComboBoxItem>
+                        <ComboBoxItem>Large</ComboBoxItem>
+                    </ComboBox>
+
+                    <Button Click="ReadOrderYearBtn_Click" Margin="0, 10, 0, 0" Width="300">
+                        Read Orders
+                    </Button>
+                    
+                    <TextBlock Margin="0, 25, 0, 0">
+                            Most Popular by Product
+                    </TextBlock>
+
+                    <ComboBox Name="OrdersMostPopular" Width="300">
+                        <ComboBoxItem>Pizza</ComboBoxItem>
+                        <ComboBoxItem>Drinks</ComboBoxItem>
+                        <ComboBoxItem>Sandwiches</ComboBoxItem>
+                        <ComboBoxItem>Wings</ComboBoxItem>
+                        <ComboBoxItem>Fries</ComboBoxItem>
+                        <ComboBoxItem>Deserts</ComboBoxItem>
+                    </ComboBox>
+
+                    <Button Click="ReadOrderMostPopularBtn_Click" Margin="0, 10, 0, 0" Width="300">
+                        Read Orders
+                    </Button>
+
+                    <TextBlock Margin="0, 25, 0, 0">
+                            Most Popular by Product
+                    </TextBlock>
+
+                    <ComboBox Name="OrdersLeastPopular" Width="300">
+                        <ComboBoxItem>Pizza</ComboBoxItem>
+                        <ComboBoxItem>Drinks</ComboBoxItem>
+                        <ComboBoxItem>Sandwiches</ComboBoxItem>
+                        <ComboBoxItem>Wings</ComboBoxItem>
+                        <ComboBoxItem>Fries</ComboBoxItem>
+                        <ComboBoxItem>Deserts</ComboBoxItem>
+                    </ComboBox>
+
+                    <Button Click="ReadOrderLeastPopularBtn_Click" Margin="0, 10, 0, 0" Width="300">
+                        Read Orders
+                    </Button>
+
+                    <TextBlock Margin="0, 10, 0, 100" TextWrapping="Wrap"  Name="Output">
+                        
+                    </TextBlock>
+
+                </StackPanel>
+
+
+            </StackPanel>
+
+            
+        </ScrollViewer>
+        
+    </Grid>
+</Page>

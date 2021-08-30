@@ -1,0 +1,82 @@
+<Page
+    x:Class="PapaDariosPizza.ContactPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PapaDariosPizza"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible">
+            <StackPanel  Background="Beige" Name="Container">
+               
+                <StackPanel Width = "300" Name="Main">
+                    <StackPanel Orientation="Horizontal">
+
+                        <TextBlock FontWeight="Bold" FontSize="25">
+                    Papa Darios Pizza
+                        </TextBlock>
+                        <Button Click="HomeBtn_Click" Margin="10, 0, 0, 0">
+                            Home
+                        </Button>
+
+                    </StackPanel>
+
+                    <TextBlock>
+                    Contact
+                    </TextBlock>
+
+                    <StackPanel Margin="0, 100, 0, 0">
+                        <TextBlock FontSize="25" FontWeight="Bold">
+                            Company Information
+                        </TextBlock>
+
+                        <TextBlock Margin="0, 10, 0, 0">
+                            Phone: +390-669-888-1022
+                        </TextBlock>
+                        
+                        <TextBlock Margin="0, 10, 0, 0">
+                            Email: PapaDarios@MiddleEastPizza.com
+                        </TextBlock>
+                        
+                        <TextBlock Margin="0, 10, 0, 0">
+                            Email: 28 Spoons Street, Quahog, Rhode Island
+                        </TextBlock>
+
+                        <TextBlock Margin="0, 10, 0, 0">
+                            Owner: Don Karlona
+                        </TextBlock>
+
+                        <TextBlock Margin="0, 10, 0, 0">
+                            Manager: Michael Hefe
+                        </TextBlock>
+
+                        <TextBlock Margin="0, 10, 0, 0">
+                            Chef: Darth Viddie
+                        </TextBlock>
+
+                        <TextBlock Margin="0, 10, 0, 0">
+                            Cashier: Cruella Di Vilista 
+                        </TextBlock>
+
+                        <TextBlock Margin="0, 10, 0, 0">
+                            Order Taker: Mironie Priest
+                        </TextBlock>
+
+                        <Rectangle Margin="0, 25, 0, 100" HorizontalAlignment="Left" Fill="Gray" Height="200" Width="300">
+                            
+                        </Rectangle>
+
+                    </StackPanel>
+                    
+                </StackPanel>
+
+            </StackPanel>
+
+        </ScrollViewer>
+       
+
+    </Grid>
+</Page>

@@ -1,0 +1,101 @@
+<Page
+    x:Class="PapaDariosPizza.RegisterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PapaDariosPizza"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible">
+            <StackPanel  Background="Beige" Name="Container">
+                <StackPanel Width="300" Name="Main">
+                    <StackPanel Orientation="Horizontal">
+
+                        <TextBlock FontWeight="Bold" FontSize="25">
+                        Papa Darios Pizza
+                        </TextBlock>
+                        <Button Click="HomeBtn_Click" Margin="10, 0, 0, 0">
+                            Home
+                        </Button>
+
+                    </StackPanel>
+
+                    <TextBlock>
+                    Register
+                    </TextBlock>
+
+                    <TextBlock TextWrapping="Wrap" Foreground="Green" Name="OutputVarSetup">
+                        
+                    </TextBlock>
+                    
+                    <StackPanel>
+                        <Button Name="SetRegistryManagerBtn" Click="SetRegistryManagerBtn_Click" Margin="0, 10, 0, 0">
+                            Set Registry Manager
+                        </Button>
+                        
+                        <Button Name="SetRegistryListBtn" Click="SetRegisterListBtn_Click" Margin="0, 10, 0, 0">
+                            Set Register List
+                        </Button>
+
+                        
+                        
+                    </StackPanel>
+
+                    <StackPanel Margin="0, 50, 0, 0">
+                        
+                        <TextBlock>
+                        Name:
+                        </TextBlock>
+                        
+                        <TextBox Name="Name">
+
+                        </TextBox>
+                        
+                        <TextBlock>
+                        User Name:
+                        </TextBlock>
+                        
+                        <TextBox Name="UserName">
+
+                        </TextBox>
+                        <TextBlock>
+                          Email:
+                        </TextBlock>
+                        
+                        <TextBox Name="Email">
+
+                        </TextBox>
+                        
+                        <TextBlock>
+                        Password
+                        </TextBlock>
+
+                        <TextBox Name="Password">
+
+                        </TextBox>
+
+                        <ScrollViewer Margin="0, 25, 0, 0">
+                            <TextBlock TextWrapping="Wrap" Name="Output">
+
+                            </TextBlock>
+
+                        </ScrollViewer>
+                        
+                        <Button Click="RegisterBtn_Click" Margin="0, 10, 0, 0" Width="300">
+                            Register
+                        </Button>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+
+            </StackPanel>
+        </ScrollViewer>
+      
+
+    </Grid>
+</Page>

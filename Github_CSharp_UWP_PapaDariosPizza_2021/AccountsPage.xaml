@@ -1,0 +1,272 @@
+<Page
+    x:Class="PapaDariosPizza.AccountsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PapaDariosPizza"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid>
+        <ScrollViewer VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible">
+            <StackPanel  Background="Beige" Name="Container">
+                <StackPanel Width="300" Name="Main">
+                    <StackPanel Orientation="Horizontal">
+
+                        <TextBlock FontWeight="Bold" FontSize="25">
+                    Papa Darios Pizza
+                        </TextBlock>
+                        <Button Click="HomeBtn_Click" Margin="10, 0, 0, 0">
+                            Home
+                        </Button>
+
+                    </StackPanel>
+
+                    <TextBlock>
+                    Accounts
+                    </TextBlock>
+
+                    <TextBlock Foreground="Red" Name="OrderCountBox">
+
+                    </TextBlock>
+
+                    <TextBlock Margin="0, 10, 0, 0" Foreground="Red" Name="SignedInBox">
+
+                    </TextBlock>
+
+                    <StackPanel Name="RefreshBox">
+                        <Button Click="RefreshBtn_Click">
+                            Refresh
+                        </Button>
+                    </StackPanel>
+
+
+                    <TextBlock Margin="0, 25, 0, 0">
+                        Order Id:
+                    </TextBlock>
+                    
+                    <TextBox Name="OrderId">
+                        
+                    </TextBox>
+
+                    <Button Click="ReadOrderBtn_Click" Margin="0, 10, 0, 0" Width="300">
+                        Read Order
+                    </Button>
+
+                    <TextBlock Margin="0, 25, 0, 0">
+                        Read All Orders:
+                    </TextBlock>
+                    
+                    <TextBlock Margin="0, 25, 0, 0">
+                        Customer Id:
+                    </TextBlock>
+
+                    <TextBox Name="CustomerId">
+
+                    </TextBox>
+                    
+                    <Button Click="ReadAllOrderBtn_Click" Margin="0, 10, 0, 0" Width="300">
+                        Read Orders
+                    </Button>
+                    
+                    <TextBlock Margin="0, 25, 0, 0">
+                        Modify Existing Order:
+                    </TextBlock>
+                    
+                    <TextBlock Margin="0, 25, 0, 0">
+                        Order Id:
+                    </TextBlock>
+
+                    <TextBox Name="ModifyOrderId">
+
+                    </TextBox>
+
+
+                    <TextBlock Margin="0, 20, 0, 0">
+                            What Pizza?
+                    </TextBlock>
+
+                    <ComboBox Name="PizzaBox" Width="300">
+                        <ComboBoxItem Name="PepperoniPizza">Pepperoni</ComboBoxItem>
+                        <ComboBoxItem Name="CheesePizza">Cheese</ComboBoxItem>
+                        <ComboBoxItem Name="VeggiePizza">Veggie</ComboBoxItem>
+                        <ComboBoxItem Name="CanadianPizza">Canadian</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            What Size?
+                    </TextBlock>
+
+                    <ComboBox Name="PizzaSizeBox" Width="300">
+                        <ComboBoxItem Name="SmallPizza">Small</ComboBoxItem>
+                        <ComboBoxItem Name="MediumPizza">Medium</ComboBoxItem>
+                        <ComboBoxItem Name="LargePizza">Large</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            How Many
+                    </TextBlock>
+
+                    <TextBox Name="PizzaAmountBox">
+
+                    </TextBox>
+
+                    <TextBlock Margin="0, 20, 0, 0">
+                            What Drink?
+                    </TextBlock>
+
+                    <ComboBox Name="DrinkBox" Width="300">
+                        <ComboBoxItem Name="CokeDrink">Coke</ComboBoxItem>
+                        <ComboBoxItem Name="DietCokeDrink">Diet Coke</ComboBoxItem>
+                        <ComboBoxItem Name="_7UpDrink">7 Up</ComboBoxItem>
+                        <ComboBoxItem Name="GingerAleDrink">Ginger Ale</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            What Size?
+                    </TextBlock>
+
+                    <ComboBox Name="DrinkSizeBox" Width="300">
+                        <ComboBoxItem Name="SmallDrink">Small</ComboBoxItem>
+                        <ComboBoxItem Name="MediumDrink">Medium</ComboBoxItem>
+                        <ComboBoxItem Name="LargeDrink">Large</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            How Many
+                    </TextBlock>
+
+                    <TextBox Name="DrinkAmountBox">
+
+                    </TextBox>
+
+                    <TextBlock Margin="0, 20, 0, 0">
+                            What Sandwich?
+                    </TextBlock>
+
+                    <ComboBox Name="SandwichBox" Width="300">
+                        <ComboBoxItem Name="ChickenSandy">Chicken</ComboBoxItem>
+                        <ComboBoxItem Name="BeefSandy">Beef</ComboBoxItem>
+                        <ComboBoxItem Name="TurkeySandy">Turkey</ComboBoxItem>
+                        <ComboBoxItem Name="VeggieSandy">Veggie</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock>
+                            What Size?
+                    </TextBlock>
+                    <ComboBox Name="SandwichSizeBox" Width="300">
+                        <ComboBoxItem Name="SmallSandy">Small</ComboBoxItem>
+                        <ComboBoxItem Name="MediumSandy">Medium</ComboBoxItem>
+                        <ComboBoxItem Name="LargeSandy">Large</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock>
+                            How Many
+                    </TextBlock>
+
+                    <TextBox Name="SandwichAmountBox">
+
+                    </TextBox>
+
+
+                    <TextBlock Margin="0, 20, 0, 0">
+                            What Kind of Wings?
+                    </TextBlock>
+
+                    <ComboBox Name="WingsBox" Width="300">
+                        <ComboBoxItem Name="MildWings">Mild</ComboBoxItem>
+                        <ComboBoxItem Name="MediumWings">Medium</ComboBoxItem>
+                        <ComboBoxItem Name="HotWings">Hot</ComboBoxItem>
+                        <ComboBoxItem Name="HoneyGarlicWings">HoneyGarlic</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            What Size?
+                    </TextBlock>
+                    <ComboBox Name="WingsSizeBox" Width="300">
+                        <ComboBoxItem Name="SmallWings">Small</ComboBoxItem>
+                        <ComboBoxItem Name="MediumSizeWings">Medium</ComboBoxItem>
+                        <ComboBoxItem Name="LargeWings">Large</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            How Many
+                    </TextBlock>
+
+                    <TextBox Name="WingsAmountBox">
+
+                    </TextBox>
+
+
+                    <TextBlock Margin="0, 20, 0, 0">
+                            What Kind of Desert?
+                    </TextBlock>
+                    <ComboBox Name="DesertBox" Width="300">
+                        <ComboBoxItem Name="JamunDesert">Jamun</ComboBoxItem>
+                        <ComboBoxItem Name="SandeshDesert">Sandesh</ComboBoxItem>
+                        <ComboBoxItem Name="ModakDesert">Modak</ComboBoxItem>
+                        <ComboBoxItem Name="PayasamDesert">Payasam</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            What Size?
+                    </TextBlock>
+                    <ComboBox Name="DesertSizeBox" Width="300">
+                        <ComboBoxItem Name="SmallDesert">Small</ComboBoxItem>
+                        <ComboBoxItem Name="MediumDesert">Medium</ComboBoxItem>
+                        <ComboBoxItem Name="LargeDesert">Large</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            How Many
+                    </TextBlock>
+
+                    <TextBox Name="DesertAmountBox">
+
+                    </TextBox>
+
+                    <TextBlock Margin="0, 20, 0, 0">
+                            What Kind of Fries?
+                    </TextBlock>
+                    <ComboBox Name="FriesBox" Width="300">
+                        <ComboBoxItem Name="RegularFries">Regular</ComboBoxItem>
+                        <ComboBoxItem Name="GravyFries">Gravy</ComboBoxItem>
+                        <ComboBoxItem Name="BaconFries">Bacon</ComboBoxItem>
+                        <ComboBoxItem Name="PoutineFries">Poutine</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            What Size?
+                    </TextBlock>
+                    <ComboBox Name="FriesSizeBox" Width="300">
+                        <ComboBoxItem Name="SmallFries">Small</ComboBoxItem>
+                        <ComboBoxItem Name="MediumFries">Medium</ComboBoxItem>
+                        <ComboBoxItem Name="LargeFries">Large</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock>
+                            How Many
+                    </TextBlock>
+
+                    <TextBox Name="FriesAmountBox">
+
+                    </TextBox>
+
+                    <StackPanel Margin="0, 10, 0, 100">
+                        <Button Click="ModifyOrderBtn_Click" Width="300">
+                            Modify Order
+                        </Button>
+                    </StackPanel>
+
+                    <TextBlock Margin="0, 10, 0, 100" TextWrapping="Wrap" Name="Output">
+
+                    </TextBlock>
+                    
+                </StackPanel>
+
+
+            </StackPanel>
+        </ScrollViewer>
+       
+
+    </Grid>
+</Page>
